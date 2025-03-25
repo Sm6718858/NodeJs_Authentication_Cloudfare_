@@ -6,9 +6,9 @@ import { v2 as cloudinary } from 'cloudinary';
 import multer from 'multer';
 
 cloudinary.config({
-    cloud_name: 'dfqmcboku',
-    api_key: '894239367171322',
-    api_secret: 'yuljtKwR0KcTKKyFFVNjZdb9JJs'
+    cloud_name: 'enter name from cloudinary',
+    api_key: 'your api key for cloudinary',
+    api_secret: 'api secret enter here'
 });
 
 const app = express();
@@ -106,7 +106,7 @@ app.get('/login', (req, res) => {
     res.render('login');
 });
 
-mongoose.connect("mongodb://localhost:27017/", {
+mongoose.connect("your mongo connection string", {
     dbName: "AuthProject",
 })
     .then(() => {
